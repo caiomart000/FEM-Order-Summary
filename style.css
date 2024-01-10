@@ -1,0 +1,108 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  background: url('./images/pattern-background-desktop.svg') center center/cover
+    no-repeat hsl(225, 100%, 94%);
+}
+.content {
+  overflow: hidden;
+  border-radius: 15px;
+  /* border: 1px solid grey; */
+  height: 600px;
+  width: 350px;
+  background-color: white;
+  box-shadow: 1px 1px 20px hsl(224, 23%, 55%);
+}
+
+.content .img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: Red Hat Display, sans-serif;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.title-price {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: Red Hat Display, sans-serif;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.description,
+.btn-cancel {
+  font-family: 'Red Hat Display';
+  font-weight: 500;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  padding: 15px;
+}
+
+.price {
+  margin: 10px 10px;
+  height: 90px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-family: 'Red Hat Display';
+  font-weight: 500;
+  font-size: 12px;
+  background-color: hsl(225, 100%, 98%);
+}
+.description-change {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-pay {
+  font-family: 'Red Hat Display';
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 15px auto 0;
+  cursor: pointer;
+  display: grid;
+}
+.btn-pay:hover {
+  background-color: hsl(223, 47%, 23%);
+}
+a .btn-cancel {
+  font-weight: bold;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  .container {
+    background: url('./images/pattern-background-mobile.svg') no-repeat
+      hsl(225, 100%, 94%);
+    height: 100vh;
+  }
+}
